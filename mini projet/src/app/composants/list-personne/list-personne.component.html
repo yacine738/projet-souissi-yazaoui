@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>List of People</h3>
+  
+    <div *ngIf="personnes.length === 0" class="alert alert-info">
+      No personnes found.
+    </div>
+  
+    <div *ngFor="let personne of personnes" class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ personne.nom }} {{ personne.prenom }}</h5>
+        <p class="card-text">
+          <strong>CIN:</strong> {{ personne.cin }}<br>
+          <strong>Affiliation:</strong> {{ personne.affiliation.departement }}
+        </p>
+      </div>
+    </div>
+  </div>

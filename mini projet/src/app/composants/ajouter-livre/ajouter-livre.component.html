@@ -1,0 +1,40 @@
+<div class="container">
+    <h3>Ajout d'un livre</h3>
+    <form [formGroup]="livreForm" (ngSubmit)="onSubmitForm()">
+        <label> Identifiant du livre </label>
+        <input type="number" name="id" formControlName="id">
+        <div *ngIf="idLivre?.invalid && idLivre?.touched" class="alert alert-danger">
+            L'identifiant doit être un nombre valide.
+        </div>
+        <div>
+            <label>Titre</label>
+            <input type="text" name="titre" formControlName="titre">
+            <div *ngIf="isValidPattern()" class="alert alert-warning">
+                Le titre doit commencer par une majuscule suivie d'au moins 1 lettre.
+            </div>
+        </div>
+        <label>Auteur</label>
+        <input type="text" name="auteur" formControlName="auteur">
+        <div *ngIf="autLivre?.errors?.['required'] && autLivre?.dirty" class="alert alert-warning">
+            Le champ est obligatoire.
+        </div>
+        <div>
+            <label>Catégorie</label>
+            <select name="categorie" formControlName="categorie">
+                <option *ngFor="let c of categories" [value]="c">{{c}}</option>
+            </select>
+        </div>
+        <div>
+            <label>Prix</label>
+            <input type="number" class="form-control" name="prix" formControlName="prix">
+            <div *ngIf="isValidPrix()" class="alert alert-warning">
+                Le prix doit être d'au moins 17 DT.
+            </div>
+        </div>
+        <input type="submit" value="Ajouter" class="btn btn-success">
+        <input type="button" value="Effacer" (click)="onresetForm()" class="btn btn-warning">
+    </form>
+    <div class="container mt-5">
+        {{ livres | json }}
+    </div>
+</div>

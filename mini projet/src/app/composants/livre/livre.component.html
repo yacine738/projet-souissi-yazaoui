@@ -1,0 +1,12 @@
+<h2>List of Books</h2>
+<div>
+  <label for="category">Catégorie</label>
+  <select name="category" formControlName="category">
+
+    <option [ngValue]="categories">Toutes</option>
+    <option *ngFor="let category of categories" [ngValue]="category">{{ category | capitalize }}</option>
+
+  </select>
+</div>
+<app-list-livre [livres]="livres"></app-list-livre>
+<app-ajouter-livre></app-ajouter-livre>

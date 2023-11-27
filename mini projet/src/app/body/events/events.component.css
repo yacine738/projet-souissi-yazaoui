@@ -1,0 +1,29 @@
+/* .container-fluid, .container-sm, .container-md, .container-lg,.container-xl,.container-xxl {
+    max-width: 1920px;
+  }
+.container-fluid .portfolio-box, .container-sm .portfolio-box,.container-md .portfolio-box, .container-lg .portfolio-box,.container-xl .portfolio-box,.container-xxl .portfolio-box {
+    position: relative;
+    display: block;
+  }
+.container-fluid .portfolio-box .portfolio-box-caption,.container-sm .portfolio-box .portfolio-box-caption,.container-md .portfolio-box .portfolio-box-caption, .container-lg .portfolio-box .portfolio-box-caption,.container-xl .portfolio-box .portfolio-box-caption,.container-xxl .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+  }
+.container-fluid .portfolio-box .portfolio-box-caption .project-category,.container-sm .portfolio-box .portfolio-box-caption .project-category,.container-md .portfolio-box .portfolio-box-caption .project-category,.container-lg .portfolio-box .portfolio-box-caption .project-category,.container-xl .portfolio-box .portfolio-box-caption .project-category,.container-xxl .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  } */

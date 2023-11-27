@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let livre of livres; trackByFn">
+      {{livre.id}} - {{ livre.titre }} by {{ livre.auteur }} - {{ livre.prix | currency:'$' }} - {{livre.categorie}}
+    </li>
+  </ul>

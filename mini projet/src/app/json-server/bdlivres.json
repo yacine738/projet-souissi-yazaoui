@@ -1,0 +1,25 @@
+{
+  "livres": [
+    {
+      "id": 1,
+      "titre": "romeo and julliet",
+      "prix": 20,
+      "auteur": "shekespear",
+      "categorie": "Romance"
+    },
+    {
+      "id": 2,
+      "titre": "harry potter",
+      "prix": 40,
+      "auteur": "J. K. Rowling",
+      "categorie": "SciFi"
+    },
+    {
+      "id": 3,
+      "titre": "the art of seduction",
+      "prix": 20,
+      "auteur": "robert green",
+      "categorie": "self improvement"
+    }
+  ]
+}

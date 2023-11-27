@@ -1,0 +1,55 @@
+<!-- personne.component.html -->
+<div class="container">
+    <h2>Add a Person</h2>
+    <form [formGroup]="personneForm" (ngSubmit)="onSubmitForm()">
+      <div>
+        <label for="cin">CIN</label>
+        <input type="text" formControlName="cin">
+      </div>
+  
+      <div>
+        <label for="nom">Donnez le nom</label>
+        <input type="text" formControlName="nom">
+      </div>
+  
+      <div>
+        <label for="prenom">Donnez le prenom</label>
+        <input type="text" formControlName="prenom">
+      </div>
+  
+      <div>
+        <label for="date_naissance">Donnez la date de naissance</label>
+        <input type="text" formControlName="date_naissance">
+      </div>
+  
+      <div>
+        <label for="adresse">Donnez l'adresse</label>
+        <input type="text" formControlName="adresse">
+      </div>
+  
+      <div>
+        <label for="email">Donnez l'adresse mail</label>
+        <input type="text" formControlName="email">
+      </div>
+  
+      <div>
+        <label for="telephone">Donnez le nombre de téléphone</label>
+        <input type="number" placeholder="000000000000" formControlName="telephone">
+      </div>
+  
+      <div class="p-2 bg-light rounded">
+        <strong>Affiliation</strong>
+        <div>
+          <div>
+            <label>Choisissez le département</label>
+            <select formControlName="affiliation.departement">
+              <option *ngFor="let dept of departements" [value]="dept">{{ dept }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Add Person</button>
+      <input type="button" class="btn btn-secondary" value="Clear" (click)="onResetForm()">
+    </form>
+  </div>
+  <app-list-personne></app-list-personne>

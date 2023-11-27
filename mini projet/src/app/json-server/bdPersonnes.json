@@ -1,0 +1,16 @@
+{
+  "personnes": [
+    {
+      "cin": "12455",
+      "nom": "souda",
+      "prenom":"iyed",
+      "affiliation": {
+        "departement": "TI"
+      },
+      "adresse":"15 nhaj ibn khaldoun",
+      "telephone":"0673987456",
+      "email":"souda@gmail.com",
+      "date_naissance":"19-09-2002"
+    }
+  ]
+}

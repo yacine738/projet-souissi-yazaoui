@@ -1,0 +1,7 @@
+<div *ngIf="livre" class="book-details-container">
+    <h2>{{ livre.titre }}</h2>
+    <p><strong>Auteur:</strong> {{ livre.auteur }}</p>
+    <p><strong>Catégorie:</strong> {{ livre.categorie }}</p>
+    <p><strong>Prix:</strong> {{ livre.prix | currency:'$' }}</p>
+  </div>
+  <p *ngIf="!livre" class="no-book-selected">No book selected</p>
